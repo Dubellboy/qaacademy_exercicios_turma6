@@ -7,7 +7,7 @@ números Pares e ímpares.
  */
 
 public class Exec01 {
-    public static void main(String[] args) {
+    public  void exibirParImpar() {
         int i = 0;
         for (int num =0;i <= 100;i++){
             if(i % 2 == 0) {

@@ -3,21 +3,15 @@ package exercicios_easy;
 import javax.swing.*;
 
 public class Exec11 {
-    public static void main(String[] args) {
+    public String contador(int num) {
 
-        int num ,i = 1;
-       // num = Integer.parseInt(JOptionPane.showInputDialog("Digite o número"));
-        /*
-        while(i <= 100){
-            num = num + 2;
-            System.out.println(i + "=" + num);
-            i++;
-        }
+        int i = 1;
+        String resultado = "";
 
-         */
         for (num = 10;i <=100;i++){
             num = num + 2;
-            System.out.println(i + " = " + num);
+            resultado = i + " = " + num;
         }
+        return resultado;
     }
 }

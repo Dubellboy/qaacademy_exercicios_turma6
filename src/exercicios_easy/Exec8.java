@@ -8,13 +8,13 @@ Respeitando a tabela abaixo:
 import javax.swing.*;
 
 public class Exec8 {
-    public static void main(String[] args) {
-        double salario;
+    public double [] calculoImpostoRenda(double salario) {
+
         double valorBruto =0 ;
         double valorImposto = 0 ;
         double salarioLiquido = 0 ;
+        double resultado [] = new double[4];
 
-        salario = Integer.parseInt((JOptionPane.showInputDialog("Digite o valor do salário: ")));
 
         if(salario <= 1903.98){
             System.out.println("Isento de imposto de renda");
@@ -35,10 +35,13 @@ public class Exec8 {
             salarioLiquido = salario -valorImposto;
             valorBruto = valorImposto + salario;
         }
-        System.out.println("O valor do salário é: "+ salario);
-        System.out.println("O valor do INSS é : " + valorImposto);
-        System.out.println("O valor bruto do salário é: " + valorBruto);
-        System.out.println("O valor do salário líquido é: " + salarioLiquido);
+        resultado[0] = salario;
+        resultado[1] = valorImposto;
+        resultado[2] = valorBruto;
+        resultado[3] = salarioLiquido;
+
+        return resultado;
     }
+
 
 }

@@ -3,17 +3,23 @@ package exercicios_easy;
 import javax.swing.*;
 
 public class Exec9 {
-    public static void main(String[] args) {
-        int numero, resultado = 0;
+    public String [] calculadora(int numero) {
+        int resultado = 0;
+        String retorno;
         int i = 1;
+        int j = 0;
+        String calculo[] = new String[10];
 
-        numero = Integer.parseInt(JOptionPane.showInputDialog(("Digite o número")));
+
         while(i <=10){
             resultado = numero * i;
-            System.out.println(numero + " X " + i + " =  " + resultado);
+            retorno = numero + " X " + i + " =  " + resultado;
+            calculo[j] = retorno;
             i++;
+            j++;
 
         }
+        return calculo;
 
     }
 }

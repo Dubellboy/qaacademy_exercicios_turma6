@@ -8,11 +8,11 @@ números digitados, é o menor.
 import javax.swing.*;
 
 public class Exec05 {
-    public static void main(String[] args) {
+    public void menorNumero(int num) {
 
-        int menor =0, num = 0;
+        int menor =0;
         for (int i = 0;i < 5;i++){
-            num = Integer.parseInt(JOptionPane.showInputDialog("Digite um número: "));
+
             System.out.println("O número digitado é " + num);
        if(num < menor || i ==0 ) {
            menor = num;

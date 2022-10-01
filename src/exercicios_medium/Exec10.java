@@ -9,7 +9,7 @@ A sequencia de Fibonacci, é calcula com a soma dos 2 termos anteriores, sendo o
 primeiro e o segundo são 0 e 1, respectivamente. 0, 1, 1, 2, 3, 5, 8, 13 .. 21
  */
 public class Exec10 {
-    public static void main(String[] args) {
+    public  void fibonacci() {
         int fib [] = new int[10];
         fib[1] = 1;
         for(int i = 2; i < fib.length;i++){

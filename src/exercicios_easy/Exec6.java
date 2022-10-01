@@ -5,20 +5,20 @@ SE - a média > 5 Exibir aprovado, SE a média < 5 exibir reprovado, se media = 
 exibir exame.
  */
 
-import javax.swing.*;
-
 public class Exec6 {
-    public static void main(String[] args) {
-        float nota1, nota2, media;
-        nota1 = Integer.parseInt(JOptionPane.showInputDialog("Digite a primeira nota"));
-        nota2 = Integer.parseInt(JOptionPane.showInputDialog("Digite a segunda nota"));
-        media = (nota1 + nota2)/2;
-        if(media > 5){
-            System.out.println("Aprovado");
-        }if(media < 5){
-            System.out.println("Reprovado");
-        }if(media == 5) {
-            System.out.println("Exame");
+    public static String calculoMedia(float nota1, float nota2) {
+        float media;
+        String retorno = null;
+        media = (nota1 + nota2) / 2;
+        if (media > 5) {
+            retorno = "Aprovado";
         }
+        if (media < 5) {
+            retorno = "Reprovado";
+        }
+        if (media == 5) {
+            retorno = "Exame";
+        }
+       return retorno;
     }
 }
