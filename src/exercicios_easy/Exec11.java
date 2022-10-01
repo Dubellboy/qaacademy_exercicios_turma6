@@ -12,6 +12,6 @@ public class Exec11 {
             num = num + 2;
             resultado = i + " = " + num;
         }
-        return resultado;
+        return "A soma é "  + resultado;
     }
 }

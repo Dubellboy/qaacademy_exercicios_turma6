@@ -1,6 +1,7 @@
 package main;
 
 import exemplos.MetodosSemMain;
+import exercicios_easy.Exec11;
 import exercicios_easy.Exec2;
 import exercicios_easy.Exec3;
 import exercicios_easy.Exec6;
@@ -34,7 +35,10 @@ public class Execucao {
 //        Exec01 exec01 = new Exec01();
 //        exec01.exibirParImpar();
 
-        Exec07 exec07 = new Exec07();
-        exec07.mostraMes();
+//        Exec07 exec07 = new Exec07();
+//        exec07.mostraMes();
+
+        Exec11 exec11 = new Exec11();
+        System.out.println(exec11.contador(10));
     }
 }
